@@ -1,4 +1,0 @@
-#Sun Jun 04 18:32:49 CST 2017
-base.0=/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex
