@@ -8,6 +8,7 @@ import {
   TouchableNativeFeedback,
   RefreshControl
 } from 'react-native';
+import Dimensions from 'Dimensions';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { request } from '../util'
 import { getFavorite, addFavorite, delFavorite } from '../store'
@@ -47,7 +48,7 @@ export default class ListPage extends Component {
   getListByPage = async (isRefresh = false) => {
     const _favorites = await getFavorite()
     if (this._isLoading) return
-    if (isRefresh) {
+    if (isRefresh === true) {
       this._page = 1
       this.setState({ refreshing: true })
     } else {
@@ -61,14 +62,16 @@ export default class ListPage extends Component {
         li.collected = true
       }
     })
-    if (isRefresh) {
+    if (isRefresh === true) {
       this._list = list
+      this.setState({
+        refreshing: false
+      })
     } else {
       this._list = this._list.concat(list)
     }
     this.setState({
-      dataSource: ds.cloneWithRows(this._list),
-      refreshing: false
+      dataSource: ds.cloneWithRows(this._list)
     })
     this._isLoading = false
   }
@@ -113,6 +116,7 @@ export default class ListPage extends Component {
             rowData={rowData}
             navigate={navigate}
             toggleFavoriteHandler={this.toggleFavoriteHandler} />}
+          onEndReachedThreshold={68}
           onEndReached={this.getListByPage}
         />
       </View>
