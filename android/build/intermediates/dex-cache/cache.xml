@@ -3,6 +3,33 @@
 
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_aa5805d329113e08c5192c42e4e071fe9eb6eca2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_c33fc0ed9280ea93a65876c54f345b4125100c57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_bc54c8bd1512ec9b1456ac89c888379036393a24.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -18,15 +45,6 @@
         revision="23.0.1"
         sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
         <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_cf52bda4b1df9d187006e8f9a66ddc99d419ae95.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/ztktct/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_bc54c8bd1512ec9b1456ac89c888379036393a24.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,6 +75,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_f38921ef068c8e63347583d9deb2d6def140fded.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -84,6 +111,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_b68d1834ec37c38ca27be747985d9a1a3301c830.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         optimize="true"
@@ -102,12 +138,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_f813fd960e47608f303ba491a72e87fc2954766f.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_85c449269a3e2b31a938ce30d8ed2d42a2959612.jar" />
     </item>
     <item
         is-multidex="false"
@@ -120,12 +156,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_f813fd960e47608f303ba491a72e87fc2954766f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_5aea00ff96e0828489067f8bf30c67388df59875.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
         <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_7d461a12aa01447155194380bdfa8330d9e8b8d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_c2e7439cbaf47c519c57f8ca990397e19e40105f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.2_76afb43f101d6b53ff6f4403108da08f7e197e82.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,6 +219,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_e14016672dd28687afa5e3e558e41390191359ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -165,6 +246,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_4f923fd7268f832bbd15195e32fd2062b3a88f3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -174,12 +264,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_d133932d8239047b82ffde87e94b1908b2cd06f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="63994437f62bc861bc20c605d12962f7246116d1">
         <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_dbdb82267f491d49e629596db0e0f80df1b858d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_128cfee5f1f911391085118a1ea486fd55608143.jar" />
     </item>
     <item
         is-multidex="false"
@@ -198,6 +306,15 @@
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
         <dex dex="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_bffd7c8cb67a7283ffb52d48521279040a38c4f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_e1d211d96cf79341b779b4869bae1e6ff3e7c345.jar" />
     </item>
 
 </items>
