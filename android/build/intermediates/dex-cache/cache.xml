@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/exploded-aar/demo01/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="7a2bbc9635906f8cbbbd14c053ac24efdd3a95c5">
+        <dex dex="/home/ztktct/workspace/react-native-jdly/android/app/build/intermediates/pre-dexed/debug/demo01-react-native-vector-icons-unspecified_cd4819faadb0c2f278c0cc9b58d20a32ba7c70f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/ztktct/workspace/react native/demo01/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
