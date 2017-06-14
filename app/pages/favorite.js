@@ -7,9 +7,10 @@ import {
   Image,
   TouchableNativeFeedback
 } from 'react-native';
+import {toJS} from 'mobx';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { request } from '../util'
-import { getFavorite, delFavorite } from '../store'
+import store from '../store'
 import RowItem from '../components/item'
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1.pid !== r2.pid });
@@ -20,6 +21,7 @@ export default class ListPage extends Component {
       headerStyle: {
         backgroundColor: '#00bcd4'
       },
+      gesturesEnabled: true,
       headerTitleStyle: {
         color: '#fff'
       },
@@ -35,18 +37,16 @@ export default class ListPage extends Component {
   }
 
   cancelFavoriteHandler = (item) => {
-    delFavorite(item).then(res => {
+    store.delFavorite(item).then(res => {
       this.setState({
-        dataSource: ds.cloneWithRows(res)
+        dataSource: ds.cloneWithRows(toJS(res))
       })
     })
   }
 
   componentDidMount() {
-    getFavorite().then(res => {
-      this.setState({
-        dataSource: ds.cloneWithRows(res)
-      })
+    this.setState({
+      dataSource: ds.cloneWithRows(toJS(store.favoriteList))
     })
   }
 

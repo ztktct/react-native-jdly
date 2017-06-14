@@ -14,16 +14,16 @@ import Dimensions from 'Dimensions';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import ImgViewer from '../components/imgViewer'
 import { request } from '../util'
-import { addFavorite, delFavorite } from '../store'
+import store from '../store'
 
 // 收藏/取消收藏
 const toggleFavoriteHandler = (item) => {
   let collected = item.collected
   item.collected = !collected
   if (item.collected) {
-    addFavorite(item)
+    store.addFavorite(item)
   } else {
-    delFavorite(item)
+    store.delFavorite(item)
   }
   return item
 }
@@ -40,6 +40,7 @@ export default class DetailPage extends Component {
       headerTitleStyle: {
         color: '#fff'
       },
+      gesturesEnabled: true,
       headerTintColor: '#fff',
       headerRight: <TouchableNativeFeedback onPress={() => {
         let _item =toggleFavoriteHandler(item)
@@ -67,7 +68,7 @@ export default class DetailPage extends Component {
   componentDidMount() {
     const _self = this
     const { id } = this.props.navigation.state.params
-    request('http://45.248.69.240:3001/api/inner?id=' + id).then(result => {
+    request('http://jdly.ztktct.tk/api/inner?id=' + id).then(result => {
       this._list = result.imgLists
       _self.setState({
         dataSource: _self.state.dataSource.cloneWithRows(result.imgLists)

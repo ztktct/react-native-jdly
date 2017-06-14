@@ -11,10 +11,12 @@ import {
 import Dimensions from 'Dimensions';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { request } from '../util'
-import { getFavorite, addFavorite, delFavorite } from '../store'
+import store from '../store'
+import { observer } from 'mobx-react/native'
 import RowItem from '../components/item'
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1.pid !== r2.pid });
+@observer
 export default class ListPage extends Component {
   static navigationOptions = ({ navigation }) => {
     const navigate = navigation.navigate
@@ -46,8 +48,9 @@ export default class ListPage extends Component {
 
   // 获取列表
   getListByPage = async (isRefresh = false) => {
-    const _favorites = await getFavorite()
+    // 如果正在加载，则不执行，防止多次请求
     if (this._isLoading) return
+    // 是下拉刷新？重置分页
     if (isRefresh === true) {
       this._page = 1
       this.setState({ refreshing: true })
@@ -55,19 +58,21 @@ export default class ListPage extends Component {
       this._page++
     }
     this._isLoading = true
-    const list = await request('http://45.248.69.240:3001/api/index?page=' + this._page)
+    const list = await request('http://jdly.ztktct.tk/api/index?page=' + this._page)
     list.forEach(li => {
-      let hasIndex = _favorites.findIndex(fa => +fa.pid === +li.pid)
+      let hasIndex = store.favoriteList.findIndex(fa => +fa.pid === +li.pid)
       if (hasIndex !== -1) {
         li.collected = true
       }
     })
+    // 是下拉刷新？重置列表
     if (isRefresh === true) {
       this._list = list
       this.setState({
         refreshing: false
       })
     } else {
+      //拼接数据
       this._list = this._list.concat(list)
     }
     this.setState({
@@ -76,6 +81,7 @@ export default class ListPage extends Component {
     this._isLoading = false
   }
 
+  // 收藏与取消收藏
   toggleFavoriteHandler = (item) => {
     const current = this._list.find(li => +li.pid === +item.pid)
     const collected = current.collected
@@ -84,9 +90,9 @@ export default class ListPage extends Component {
       dataSource: ds.cloneWithRows(this._list)
     })
     if (current.collected) {
-      addFavorite(item)
+      store.addFavorite(item)
     } else {
-      delFavorite(item)
+      store.delFavorite(item)
     }
   }
 

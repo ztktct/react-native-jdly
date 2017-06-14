@@ -1,0 +1,13 @@
+{
+    "include": [
+        "./app/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "allowJs": true
+    }
+}
