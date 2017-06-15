@@ -2,3 +2,4 @@ __tests__
 node_modules
 android/.gradle
 android/app/build
+android/app/my-release-key.keystore
