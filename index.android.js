@@ -7,16 +7,18 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  Linking
 } from 'react-native';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, NavigationActions } from 'react-navigation';
 import ListPage from './app/pages/list'
 import DetailPage from './app/pages/details'
 import FavoritePage from './app/pages/favorite'
 
-const DemoApp = StackNavigator({
+const JdlyApp = StackNavigator({
   Home: { screen: ListPage },
   Detail: { screen: DetailPage },
   Favorite: { screen: FavoritePage }
 });
 
-AppRegistry.registerComponent('demo01', () => DemoApp);
+const MainApp = () => <JdlyApp uriPrefix='jdly://' />
+AppRegistry.registerComponent('demo01', () => MainApp);
